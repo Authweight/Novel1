@@ -1,0 +1,104 @@
+Gala
+
+- Sees a plane crash
+- Finds Victoria at the crash site
+- Needs to help Victoria get back to Bell Harbor for medical treatment
+- The two evade imperial agents in the woods
+- Get back to Bell Harbor
+- Imperial gunboats arrive
+- Confrontation with Victoria
+- Town decides they're not going to hand her over without a fight
+- Rebels arrive just in time to help
+- Imperials are defeated... for now
+
+Rolan
+
+- Wants to join the rebels as a rifleman, but Maria knows he's a pilot
+- Gets told his job is to train the other pilots
+- Gets dragged into politics with Maria
+- Gets extremely frustrated with training
+- Hear about the island about to come under attack
+- Maria thinks this is the perfect opportunity to pull everyone together
+- Big battle sequence
+
+Gala arc and themes
+- Dialectic:
+    - Thesis: It is her duty to throw herself at the most worthy cause she can find, even at great cost to herself
+    - Antithesis: She ends up failing everyone she cares about and has no choice but to run away. The "cause" was pointless all along.
+    - Synthesis: It's worth sacrificing for people she cares about. And you have to trust others. The risk is worth it, but don't be a fool.
+- Grew up aristocratic, but learned how to live on her own without support
+    - Needs to learn that her upbringing still echoes to her advantage even though she abandoned it
+- Needs to move on from Andrea
+    - Gala failed Andrea, abandoning her with a child to care for and no income
+    - But also, more subtly, Andrea failed Gala. She cut Gala off and hated her for something she felt she had to do.
+- Learning more about her powers
+    - Gala can see the future, though right now it is mostly unconscious
+    - By focusing, she can learn to see more clearly
+- The old master
+    - He is part of a tradition dating back from the fall of the Orthochron
+    - He has been waiting in Bell Harbor for his next student
+    - The time has come to go back in the open. Gala will open the way for a new dawn
+
+Rolan arc and themes
+- Dialectic:
+    - Thesis: If you're good at something, do it. This will earn you praise and an easy life.
+    - Antithesis: All you're good at is killing. Abandon it. Better to die in obscurity. Talent is a trap.
+    - Synthesis: Learn to accept your gifts and use them wisely
+- Mastery vs teaching
+    - What makes a good teacher?
+    - What does it mean to be good at something but not be able to explain why or how?
+- Needs to learn that he is more than just a skilled pilot
+- Leadership is difficult but necessary
+
+
+Lore
+- For 1,000 years, the Orthochron controlled the world
+- Orthochron:
+    - Monastic order
+    - Organized hierarchically
+    - Thousands of members
+    - Run by a small, mysterious council of masters
+    - Agents all over the world
+    - Masters of futuresight and prophecy
+- Their style of government was to rule with a very light touch. Each constituent state had considerable independence, in theory
+- In practice, the Orthochron could make sure everything ran however they liked
+    - Futuresight allowed agents to make small changes that rippled so as to manifest desired outcomes
+- The Orthochron favored stability above all else. 
+    - They saw a possibility, always on the horizon, for a nexus of change, past which they could not see
+    - They called this the Obscura
+    - They worked to keep that possibility at bay
+- Eventually, a younger member of the Orthochron, Bay Willen, suggested the Obscura ought to be permitted to occur
+    - He argued their intervention was unnatural and denied the world a necessary transformation
+    - The others argued this was too risky. Everything could be destroyed
+- Bay Willen ultimately brought about the fall of the Orthochron. He killed many of them and broke their power.
+- This led to the Seventy Years' War, where powers rose and fell, struggling for supremacy
+- Eventually the First Emperor emerged, conquering all others and founding the Empire
+    - He conquered about 90% of the populated world
+- After the First Emperor died, there were more wars
+- Eventually, the empire controlled about 60% of the world population, concentrated in the core islands
+- The rest of the world was divided into smaller nations with various complex relationships
+- Starting in the empire and rippling out, the industrial revolution occurred, transforming the world drastically
+- This eventually led to a brutal war, known as the Great War. The empire split in two with rival claimants to the throne.
+- One side saw a collapse in government and the establishment of a republic
+- An uneasy peace was established with substantial concessions by the new republic
+- Current geopolitical situation:
+    - The republic is smaller and weaker than the empire, but nobody wants another Great War
+    - Many smaller island nations carefully balance the two major powers off each other in order to maintain their independence
+    - The hot spots of the day are the southern islands
+- Southern islands:
+    - Never conquered by the First Emperor
+    - Fiercely independent
+    - Economically dynamic
+    - Growing in size and importance to the world economy
+    - Some islands were independent until the Great War, when they chose the wrong side and then were handed over by treaty
+    - The unfree islands want independence so as to join the Free Islands
+    - Formally, the Free Islands recognize these as rebels. But public opinion is sympathetic to them
+    - A rebel force, funded partially by the Free Islands, and also by the Republic, is dedicated to achieving independence
+- Rebels
+    - Operate a network of secret bases on unpopulated islands
+    - Maintain a fleet of warships scattered and hidden in the wide sea
+    - Launch regular raids into imperial territory, disrupting imperial operations and causing trouble
+- Division within rebels
+    - The rebels are governed by a small council
+    - Some want to pursue maximum aggression against the Empire
+    - Maria, in particular, favors a less aggressive policy focused more on long-term capabilities and winning over the governments of the Southern Islands
