@@ -2,7 +2,7 @@
   "profiles": {
     "NovelBuilder": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:/git/Novel1/output\""
+      "commandLineArgs": "\"C:/git/Novel1/manifest.json\""
     }
   }
 }

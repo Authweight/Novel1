@@ -1,13 +1,16 @@
 ﻿using NovelBuilder;
 using System.IO.Compression;
+using System.Text.Json;
 
 Console.WriteLine("Let's do this");
-var basePath = args[0];
+var manifestPath = args[0];
 
-if (string.IsNullOrEmpty(basePath))
+if (string.IsNullOrEmpty(manifestPath))
 {
-    throw new Exception("Need a base path to work with");
+    throw new Exception("Need a manifest to work with");
 }
+
+var basePath = Path.Join(manifestPath, "../output");
 
 if (Directory.Exists(basePath))
 {
@@ -23,10 +26,20 @@ File.WriteAllText(Path.Combine(metaInfPath, "container.xml"), HtmlExtensions.Get
 
 var oebpsPath = Path.Join(basePath, "OEBPS");
 Directory.CreateDirectory(oebpsPath);
-File.WriteAllText(Path.Combine(oebpsPath, "content.opf"), HtmlExtensions.GetContentOpf());
-File.WriteAllText(Path.Combine(oebpsPath, "toc.ncx"), HtmlExtensions.GetTocNcx());
-File.WriteAllText(Path.Combine(oebpsPath, "toc.xhtml"), HtmlExtensions.GetTocHtml());
-File.WriteAllText(Path.Combine(oebpsPath, "chapter_1.xhtml"), HtmlExtensions.GetChapter1Html());
+
+var manifestText = File.ReadAllText(manifestPath);
+var manifest = JsonSerializer.Deserialize<Manifest>(manifestText);
+manifest = manifest with { Chapters = manifest.Chapters.Select((x, i) => x with { Id = $"chapter_{i}" }).ToList() };
+
+File.WriteAllText(Path.Combine(oebpsPath, "content.opf"), HtmlExtensions.GetContentOpf(manifest));
+File.WriteAllText(Path.Combine(oebpsPath, "toc.ncx"), HtmlExtensions.GetTocNcx(manifest));
+File.WriteAllText(Path.Combine(oebpsPath, "toc.xhtml"), HtmlExtensions.GetTocHtml(manifest));
+
+foreach(var chapter in manifest.Chapters)
+{
+    var text = File.ReadAllText(Path.Join(manifestPath, "..", chapter.File));
+    File.WriteAllText(Path.Combine(oebpsPath, $"{chapter.Id}.xhtml"), HtmlExtensions.GetChapterHtml(chapter, text));
+}
 
 CreateInitialArchive();
 AddFoldersToArchive();

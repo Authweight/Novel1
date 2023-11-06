@@ -18,5 +18,6 @@ namespace NovelBuilder
     {
         public string Title { get; init; }
         public string File { get; init; }
+        public string Id { get; init; }
     }
 }
