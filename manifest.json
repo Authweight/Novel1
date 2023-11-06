@@ -1,0 +1,23 @@
+{
+    "Title": "Novel 1",
+    "Author": "Tom Goldthwait",
+    "Cover": "cover.png",
+    "Chapters": [
+        {
+            "Title": "Prologue",
+            "File": "Prologue.txt"
+        },
+        {
+            "Title": "Gala 1",
+            "File": "Gala 1.txt"
+        },
+        {
+            "Title": "Rolan 1",
+            "File": "Rolan 1.txt"
+        },
+        {
+            "Title": "Gala 2",
+            "File": "Gala 2.txt"
+        }
+    ]
+}
