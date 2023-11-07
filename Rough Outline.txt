@@ -102,3 +102,26 @@ Lore
     - The rebels are governed by a small council
     - Some want to pursue maximum aggression against the Empire
     - Maria, in particular, favors a less aggressive policy focused more on long-term capabilities and winning over the governments of the Southern Islands
+
+How do the rebels work?
+    - Committee for Southern Island Independence
+    - Maintain significant ground, air, and sea forces
+    - Hunted by imperials, but able to maintain force projection
+    - They use ship camouflage to stay hidden from aircraft
+    - Smaller ships wherever possible
+    - Submarines
+    - Hidden bases on uncharted islands
+    - Night operations
+    - Squadboat
+        - A small carrier made from a converted cargo ship
+        - Carries a single squadron of aircraft and associated support staff
+        - Famously slow and vulnerable
+    - Corvette
+        - Surface ship workhorse
+        - One big gun, machine guns, and torpedos
+        - Tactics:
+            - Close distance quickly
+            - Attack from multiple directions
+            - Avoid drastically heavier imperial ships
+    - 
+
