@@ -55,10 +55,10 @@ namespace NovelBuilder
                     new XElement(idpfNamespace + "metadata",
                         new XElement($"{{{ dcNamespace }}}title",
                             new XAttribute("id", "t1"),
-                            "Book Title"
+                            manifest.Title
                         ),
                         new XElement($"{{{ dcNamespace }}}creator",
-                            "Tom Goldthwait"
+                            manifest.Author
                         ),
                         new XElement($"{{{ dcNamespace }}}language",
                             "en"
@@ -83,6 +83,11 @@ namespace NovelBuilder
                             new XAttribute("id", "ncx"),
                             new XAttribute("href", "toc.ncx"),
                             new XAttribute("media-type", "application/x-dtbncx+xml")
+                        ),
+                        new XElement(idpfNamespace + "item",
+                            new XAttribute("id", "page_styles"),
+                            new XAttribute("href", manifest.PageStyles),
+                            new XAttribute("media-type", "text/css")
                         )
                     ),
                     new XElement(idpfNamespace + "spine",
@@ -173,6 +178,7 @@ namespace NovelBuilder
             return $@"<?xml version=""1.0"" encoding=""utf-8""?>
                 <html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:epub=""http://www.idpf.org/2007/ops"">
                 <head>
+                <link href=""{manifest.PageStyles}"" rel=""stylesheet"" type=""text/css"" />
                 <title>toc.xhtml</title>
                 </head>
                 <body>
@@ -186,12 +192,13 @@ namespace NovelBuilder
                 </html>";
         }
 
-        public static string GetChapterHtml(Chapter chapter, string fileText)
+        public static string GetChapterHtml(Chapter chapter, string fileText, Manifest manifest)
         {
             var innerHtml = fileText.ToHtmlGrafs();
             return $@"<?xml version=""1.0"" encoding=""utf-8""?>
                 <html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:epub=""http://www.idpf.org/2007/ops"">
                 <head>
+                <link href=""{manifest.PageStyles}"" rel=""stylesheet"" type=""text/css"" />
                 <title>{chapter.Title}</title>
                 </head>
 

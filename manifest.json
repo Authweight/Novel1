@@ -2,6 +2,7 @@
     "Title": "Novel 1",
     "Author": "Tom Goldthwait",
     "Cover": "cover.png",
+    "PageStyles": "page_styles.css",
     "Chapters": [
         {
             "Title": "Prologue",
@@ -9,7 +10,7 @@
         },
         {
             "Title": "Gala 1",
-            "File": "Gala 1.txt"
+            "File": "Gala 1_Alt.txt"
         },
         {
             "Title": "Rolan 1",

@@ -10,7 +10,8 @@ namespace NovelBuilder
     {
         public string Title { get; init; }
         public string Author { get; init; }
-        public string Cover { get; set; }
+        public string Cover { get; init; }
+        public string PageStyles { get; init; }
         public List<Chapter> Chapters { get; init; }
     }
 
