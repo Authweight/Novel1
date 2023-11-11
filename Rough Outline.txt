@@ -123,5 +123,31 @@ How do the rebels work?
             - Close distance quickly
             - Attack from multiple directions
             - Avoid drastically heavier imperial ships
-    - 
+
+Who joined the rebellion?
+    - True believers
+        - Often educated
+        - May be naive
+    - Down and outers
+        - Dodging prison
+        - Dodging debts
+        - Looking for a free meal and a roof
+        - May know other people who are signing up
+    - Ex-military
+        - People who served in an independent military may sign up
+        - Often a fast track to leadership
+
+Rolan's recruitment group
+    - Baldwin
+        - Older
+        - Violent past
+        - Running from something
+    - Walter
+        - Very young
+        - Ran away from home
+        - Wants to prove himself
+    - Laney
+        - Young
+        - University-educated
+        - Has big dreams of fighting the evil empire
 
