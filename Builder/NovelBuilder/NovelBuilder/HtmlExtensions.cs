@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -70,9 +72,24 @@ namespace NovelBuilder
                         new XElement($"{{{dcNamespace}}}identifier",
                             new XAttribute("id", "db-id"),
                             Guid.NewGuid()
+                        ),
+                        new XElement(idpfNamespace + "meta",
+                            new XAttribute("name", "cover"),
+                            new XAttribute("content", "cover.png")
                         )
                     ),
                     new XElement(idpfNamespace + "manifest",
+                        new XElement(idpfNamespace + "item",
+                            new XAttribute("id", "cover_image"),
+                            new XAttribute("properties", "cover-image"),
+                            new XAttribute("href", "cover.png"),
+                            new XAttribute("media-type", "image/png")
+                        ),
+                        new XElement(idpfNamespace + "item",
+                            new XAttribute("id", "cover_page"),
+                            new XAttribute("href", "cover_page.xhtml"),
+                            new XAttribute("media-type", "application/xhtml+xml")
+                        ),
                         new XElement(idpfNamespace + "item",
                             new XAttribute("id", "toc"),
                             new XAttribute("properties", "nav"),
@@ -92,6 +109,9 @@ namespace NovelBuilder
                     ),
                     new XElement(idpfNamespace + "spine",
                         new XAttribute("toc", "ncx"),
+                        new XElement(idpfNamespace + "itemref",
+                            new XAttribute("idref", "cover_page")
+                        ),
                         new XElement(idpfNamespace + "itemref",
                             new XAttribute("idref", "toc")
                         )
@@ -208,6 +228,37 @@ namespace NovelBuilder
 
 	                {innerHtml}
 
+                </body>
+                </html>";
+        }
+
+        internal static string GetCoverPage()
+        {
+            return $@"<?xml version=""1.0"" encoding=""utf-8""?>
+                <html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:epub=""http://www.idpf.org/2007/ops"">
+                <head>
+                <title>Cover</title>
+                <style>
+                    img {{
+                        background-color: grey;
+                        text-align: center;
+                        padding: 0pt;
+                        margin: 0pt;
+                        page-break-after: always;
+                        text-indent: 0;
+                        width: 100%;
+                        height: 100%;
+                    }}
+
+                    body {{
+                        margin: 0;
+                        padding: 0;
+                    }}
+                </style>
+                </head>
+
+                <body>
+                    <img src=""cover.png""/>
                 </body>
                 </html>";
         }

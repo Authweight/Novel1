@@ -37,9 +37,16 @@ File.WriteAllText(Path.Combine(oebpsPath, "toc.ncx"), HtmlExtensions.GetTocNcx(m
 File.WriteAllText(Path.Combine(oebpsPath, "toc.xhtml"), HtmlExtensions.GetTocHtml(manifest));
 File.WriteAllText(Path.Combine(oebpsPath, manifest.PageStyles), File.ReadAllText(Path.Combine(rootPath, manifest.PageStyles)));
 
+File.Copy(Path.Join(rootPath, manifest.Cover), Path.Combine(oebpsPath, "cover.png"));
+
+File.WriteAllText(Path.Combine(oebpsPath, "cover_page.xhtml"), HtmlExtensions.GetCoverPage());
+
+List<string> chapters = new List<string>();
+
 foreach(var chapter in manifest.Chapters)
 {
     var text = File.ReadAllText(Path.Join(rootPath, chapter.File));
+    chapters.Add(text);
     File.WriteAllText(Path.Combine(oebpsPath, $"{chapter.Id}.xhtml"), HtmlExtensions.GetChapterHtml(chapter, text, manifest));
 }
 
