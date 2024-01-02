@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:depth" content="1" />
+  </head>
+  <docTitle>
+    <text>Title</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="chapter_0" playOrder="1">
+      <navLabel>
+        <text>Prologue</text>
+      </navLabel>
+      <content src="chapter_0.xhtml" />
+    </navPoint>
+    <navPoint id="chapter_1" playOrder="2">
+      <navLabel>
+        <text>Gala 1</text>
+      </navLabel>
+      <content src="chapter_1.xhtml" />
+    </navPoint>
+    <navPoint id="chapter_2" playOrder="3">
+      <navLabel>
+        <text>Rolan 1</text>
+      </navLabel>
+      <content src="chapter_2.xhtml" />
+    </navPoint>
+    <navPoint id="chapter_3" playOrder="4">
+      <navLabel>
+        <text>Gala 2</text>
+      </navLabel>
+      <content src="chapter_3.xhtml" />
+    </navPoint>
+    <navPoint id="chapter_4" playOrder="5">
+      <navLabel>
+        <text>Rolan 2</text>
+      </navLabel>
+      <content src="chapter_4.xhtml" />
+    </navPoint>
+    <navPoint id="chapter_5" playOrder="6">
+      <navLabel>
+        <text>Rolan 3</text>
+      </navLabel>
+      <content src="chapter_5.xhtml" />
+    </navPoint>
+  </navMap>
+</ncx>
